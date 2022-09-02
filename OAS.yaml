@@ -8502,6 +8502,8 @@ components:
           maxLength: 255
     ZaakType:
       type: object
+      x-context: schema.conduction.nl/zaaktype
+      description: ''
       properties:
         url:
           title: Url
@@ -8514,9 +8516,7 @@ components:
         identificatie:
           title: Identificatie
           description: Unieke identificatie van het ZAAKTYPE binnen de CATALOGUS waarin het ZAAKTYPE voorkomt.
-          type: integer
-          maximum: 99999
-          minimum: 0
+          type: string
         omschrijving:
           title: Omschrijving
           description: Omschrijving van de aard van ZAAKen van het ZAAKTYPE.
@@ -8755,4 +8755,4 @@ components:
         - gerelateerdeZaaktypen
         - beginGeldigheid
         - versiedatum
-      x-context: schema.conduction.nl/zaaktype
+      title: ''
