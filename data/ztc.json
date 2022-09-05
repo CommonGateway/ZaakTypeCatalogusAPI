@@ -1,0 +1,480 @@
+{
+  "openapi": "3.0.0",
+  "collection": "https://raw.githubusercontent.com/CommonGateway/ZaakTypeCatalogusAPI/main/OAS.yaml",
+  "schemas": {
+    "BesluitType":[
+      {
+        "properties": {
+          "id": "6d922ba8-be5e-47cb-adb1-0215335ec918",
+          "url": "http://example.com",
+          "catalogus": "http://example.com",
+          "zaaktypes": [
+            "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899"
+          ],
+          "omschrijving": "string",
+          "omschrijvingGeneriek": "string",
+          "besluitcategorie": "string",
+          "reactietermijn": "string",
+          "publicatieIndicatie": true,
+          "publicatietekst": "string",
+          "publicatietermijn": "string",
+          "toelichting": "string",
+          "informatieobjecttypen": [
+          "http://example.com"
+          ],
+          "beginGeldigheid": "2019-08-24",
+          "eindeGeldigheid": "2019-08-24",
+          "concept": true
+        }
+      }
+    ],
+    "Catalogus":[
+      {
+        "properties": {
+          "url": "http://example.com",
+          "domein": "strin",
+          "rsin": "string",
+          "contactpersoonBeheerNaam": "string",
+          "contactpersoonBeheerTelefoonnummer": "string",
+          "contactpersoonBeheerEmailadres": "user@example.com",
+          "zaaktypen": [
+            "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899"
+          ],
+          "besluittypen": [
+            "http://localhost/api/besluittypen/6d922ba8-be5e-47cb-adb1-0215335ec918"
+          ],
+          "informatieobjecttypen": [
+            "http://example.com"
+          ]
+        }
+      }
+    ],
+    "Eigenschap":[
+      {
+        "properties": {
+          "url": "http://example.com",
+          "naam": "string",
+          "definitie": "string",
+          "specificatie": {
+            "groep": "string",
+            "formaat": "tekst",
+            "lengte": "string",
+            "kardinaliteit": "str",
+            "waardenverzameling": []
+          },
+          "toelichting": "string",
+          "zaaktype": "http://example.com"
+        }
+      }
+    ],
+    "ResultaatType":[
+      {
+        "properties": {
+          "id": "93b10208-daa5-4db0-a83d-fd91e8af5dd0",
+          "url": "http://example.com",
+          "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
+          "omschrijving": "string",
+          "resultaattypeomschrijving": "http://example.com",
+          "omschrijvingGeneriek": "string",
+          "selectielijstklasse": "http://example.com",
+          "toelichting": "string",
+          "archiefnominatie": "blijvend_bewaren",
+          "archiefactietermijn": "string",
+          "brondatumArchiefprocedure": {
+            "afleidingswijze": "afgehandeld",
+            "datumkenmerk": "string",
+            "einddatumBekend": true,
+            "objecttype": "adres",
+            "registratie": "string",
+            "procestermijn": "string"
+          }
+        }
+      }
+    ],
+    "RolType":[
+      {
+        "properties": {
+          "id": "1c8fff49-fc68-43d1-b253-25a29a63a67f",
+          "url": "https://localhost/api/roltypen/1c8fff49-fc68-43d1-b253-25a29a63a67f",
+          "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
+          "omschrijving": "indiener",
+          "omschrijvingGeneriek": "indiener"
+        }
+      } 
+    ],
+    "StatusType":[
+      {
+        "properties": {
+          "id": "c59e346f-e46b-464d-a9a7-9b92a47e665b",
+          "url": "http://example.com",
+          "omschrijving": "in behandeling",
+          "omschrijvingGeneriek": "string",
+          "statustekst": "in behandeling",
+          "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
+          "volgnummer": 1,
+          "isEindstatus": true,
+          "informeren": true
+        }
+      },
+      {
+        "properties": {
+          "id": "172400cf-82eb-48d7-a300-ab2c0167152f",
+          "url": "http://example.com",
+          "omschrijving": "gesloten",
+          "omschrijvingGeneriek": "string",
+          "statustekst": "gesloten",
+          "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
+          "volgnummer": 1,
+          "isEindstatus": true,
+          "informeren": true
+        }
+      },
+      {
+        "properties": {
+          "id": "bc323217-e0ac-400e-8dc2-f8bdd3e5dd0d",
+          "url": "http://example.com",
+          "omschrijving": "in afwachting",
+          "omschrijvingGeneriek": "string",
+          "statustekst": "in afwachting",
+          "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
+          "volgnummer": 1,
+          "isEindstatus": true,
+          "informeren": true
+        }
+      }
+    ],
+    "ZaakType-InformatieObjectType":[
+      {
+        "properties": {
+          "url": "http://example.com",
+          "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
+          "informatieobjecttype": "http://example.com",
+          "volgnummer": 1,
+          "richting": "inkomend",
+          "statustype": "http://example.com"
+        }
+      }
+    ],
+    "ZaakType":[
+      {
+        "properties": {
+          "id": "4bba27cd-be4d-4bd0-bd4e-2f7687e4eab1",
+          "url": "http://localhost/api/zaaktypen/4bba27cd-be4d-4bd0-bd4e-2f7687e4eab1",
+          "identificatie": 99999,
+          "omschrijving": "Melding openbare ruimte",
+          "omschrijvingGeneriek": "Melding openbare ruimte",
+          "vertrouwelijkheidaanduiding": "openbaar",
+          "doel": "Ziet u iets op straat, een park, een sportveld, water of plein dat niet in orde is? Dan kunt u een melding openbare ruimte doen bij de gemeente.",
+          "aanleiding": "Ziet u iets op straat, een park, een sportveld, water of plein dat niet in orde is? Dan kunt u een melding openbare ruimte doen bij de gemeente.",
+          "toelichting": "Ziet u iets op straat, een park, een sportveld, water of plein dat niet in orde is? Dan kunt u een melding openbare ruimte doen bij de gemeente.",
+          "indicatieInternOfExtern": "extern",
+          "handelingInitiator": "Wijzigen",
+          "onderwerp": "Melding",
+          "handelingBehandelaar": "Behandelen",
+          "doorlooptijd": "56 dagen",
+          "servicenorm": "3 dagen",
+          "opschortingEnAanhoudingMogelijk": true,
+          "verlengingMogelijk": true,
+          "verlengingstermijn": "28 dagen",
+          "trefwoorden": [
+            "melding",
+            "openbare",
+            "ruimte"
+          ],
+          "publicatieIndicatie": true,
+          "publicatietekst": "string",
+          "verantwoordingsrelatie": [
+            "string"
+          ],
+          "productenOfDiensten": [
+            "http://example.com"
+          ],
+          "selectielijstProcestype": "http://example.com",
+          "referentieproces": {
+            "naam": "string",
+            "link": "http://example.com"
+          },
+          "catalogus": "http://example.com",
+          "statustypen": [
+            "http://example.com"
+          ],
+          "resultaattypen": [
+            "http://example.com"
+          ],
+          "eigenschappen": [
+            "http://example.com"
+          ],
+          "informatieobjecttypen": [
+            "http://example.com"
+          ],
+          "roltypen": [
+            "http://example.com"
+          ],
+          "besluittypen": [
+            "http://example.com"
+          ],
+          "beginGeldigheid": "2019-08-24",
+          "eindeGeldigheid": "2019-08-24",
+          "versiedatum": "2019-08-24",
+          "concept": true
+        }
+      },
+      {
+        "properties": {
+          "id": "9516c1cc-6575-486f-a344-7bfbf1847899",
+          "url": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
+          "identificatie": 99999,
+          "omschrijving": "Wijzigen speelplaatsvergunning",
+          "omschrijvingGeneriek": "Wijzigen speelplaatsvergunning",
+          "vertrouwelijkheidaanduiding": "openbaar",
+          "doel": "Het nemen van een besluit naar aanleiding van een wijzigingsverzoek voor een bestaande speelplaatsvergunning.",
+          "aanleiding": "Een niet-natuurlijk persoon (bijv. stichting) wenst een private speelplaats te vernieuwen of uit te bereiden met andere speeltoestellen. Hiervoor is een wijziging van de bestaande vergunning nodig.",
+          "toelichting": "Het behandelen van de aanvraag op basis van de regels en procedures van de Algemene Plaatselijke Speelplaatsverordening (APS).",
+          "indicatieInternOfExtern": "extern",
+          "handelingInitiator": "Wijzigen",
+          "onderwerp": "Vergunning",
+          "handelingBehandelaar": "Behandelen",
+          "doorlooptijd": "56 dagen",
+          "servicenorm": "3 dagen",
+          "opschortingEnAanhoudingMogelijk": true,
+          "verlengingMogelijk": true,
+          "verlengingstermijn": "28 dagen",
+          "trefwoorden": [
+            "speelplaatsvergunning",
+            "speelplaats",
+            "speeltoestel",
+            "verzoek"
+          ],
+          "publicatieIndicatie": true,
+          "publicatietekst": "string",
+          "verantwoordingsrelatie": [
+            "string"
+          ],
+          "productenOfDiensten": [
+            "http://example.com"
+          ],
+          "selectielijstProcestype": "http://example.com",
+          "referentieproces": {
+            "naam": "string",
+            "link": "http://example.com"
+          },
+          "catalogus": "http://example.com",
+          "statustypen": [
+            "http://example.com"
+          ],
+          "resultaattypen": [
+            "http://example.com"
+          ],
+          "eigenschappen": [
+            "http://example.com"
+          ],
+          "informatieobjecttypen": [
+            "http://example.com"
+          ],
+          "roltypen": [
+            "http://example.com"
+          ],
+          "besluittypen": [
+            "http://example.com"
+          ],
+          "beginGeldigheid": "2019-08-24",
+          "eindeGeldigheid": "2019-08-24",
+          "versiedatum": "2019-08-24",
+          "concept": true
+        }
+      },
+      {
+        "properties": {
+          "id": "d722ab0d-6f07-411b-93f2-263c1f1abed0",
+          "url": "http://localhost/api/zaaktypen/d722ab0d-6f07-411b-93f2-263c1f1abed0",
+          "identificatie": 99999,
+          "omschrijving": "Aanvraag Bbz voor startende ondernemer",
+          "omschrijvingGeneriek": "Aanvraag Bbz voor startende ondernemer",
+          "vertrouwelijkheidaanduiding": "openbaar",
+          "doel": "Het nemen van een besluit naar aanleiding van een wijzigingsverzoek voor een bestaande speelplaatsvergunning.",
+          "aanleiding": "Een niet-natuurlijk persoon (bijv. stichting) wenst een private speelplaats te vernieuwen of uit te bereiden met andere speeltoestellen. Hiervoor is een wijziging van de bestaande vergunning nodig.",
+          "toelichting": "Het behandelen van de aanvraag op basis van de regels en procedures van de Algemene Plaatselijke Speelplaatsverordening (APS).",
+          "indicatieInternOfExtern": "extern",
+          "handelingInitiator": "Wijzigen",
+          "onderwerp": "Vergunning",
+          "handelingBehandelaar": "Behandelen",
+          "doorlooptijd": "56 dagen",
+          "servicenorm": "3 dagen",
+          "opschortingEnAanhoudingMogelijk": true,
+          "verlengingMogelijk": true,
+          "verlengingstermijn": "28 dagen",
+          "trefwoorden": [
+            "aanvraag",
+            "Bbz",
+            "startende",
+            "ondernemer"
+          ],
+          "publicatieIndicatie": true,
+          "publicatietekst": "string",
+          "verantwoordingsrelatie": [
+            "string"
+          ],
+          "productenOfDiensten": [
+            "http://example.com"
+          ],
+          "selectielijstProcestype": "http://example.com",
+          "referentieproces": {
+            "naam": "string",
+            "link": "http://example.com"
+          },
+          "catalogus": "http://example.com",
+          "statustypen": [
+            "http://example.com"
+          ],
+          "resultaattypen": [
+            "http://example.com"
+          ],
+          "eigenschappen": [
+            "http://example.com"
+          ],
+          "informatieobjecttypen": [
+            "http://example.com"
+          ],
+          "roltypen": [
+            "http://example.com"
+          ],
+          "besluittypen": [
+            "http://example.com"
+          ],
+          "beginGeldigheid": "2019-08-24",
+          "eindeGeldigheid": "2019-08-24",
+          "versiedatum": "2019-08-24",
+          "concept": true
+        }
+      },
+      {
+        "properties": {
+          "id": "78ffca25-fda5-4bb3-8df8-a48afdf4c18a",
+          "url": "http://localhost/api/zaaktypen/78ffca25-fda5-4bb3-8df8-a48afdf4c18a",
+          "identificatie": 99999,
+          "omschrijving": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
+          "omschrijvingGeneriek": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
+          "vertrouwelijkheidaanduiding": "openbaar",
+          "doel": "Het nemen van een besluit naar aanleiding van een wijzigingsverzoek voor een bestaande speelplaatsvergunning.",
+          "aanleiding": "Een niet-natuurlijk persoon (bijv. stichting) wenst een private speelplaats te vernieuwen of uit te bereiden met andere speeltoestellen. Hiervoor is een wijziging van de bestaande vergunning nodig.",
+          "toelichting": "Het behandelen van de aanvraag op basis van de regels en procedures van de Algemene Plaatselijke Speelplaatsverordening (APS).",
+          "indicatieInternOfExtern": "extern",
+          "handelingInitiator": "Wijzigen",
+          "onderwerp": "Vergunning",
+          "handelingBehandelaar": "Behandelen",
+          "doorlooptijd": "56 dagen",
+          "servicenorm": "3 dagen",
+          "opschortingEnAanhoudingMogelijk": true,
+          "verlengingMogelijk": true,
+          "verlengingstermijn": "28 dagen",
+          "trefwoorden": [
+            "aanvraag",
+            "IOAZ",
+            "onderneming",
+            "stoppen",
+            "bedrijf"
+          ],
+          "publicatieIndicatie": true,
+          "publicatietekst": "string",
+          "verantwoordingsrelatie": [
+            "string"
+          ],
+          "productenOfDiensten": [
+            "http://example.com"
+          ],
+          "selectielijstProcestype": "http://example.com",
+          "referentieproces": {
+            "naam": "string",
+            "link": "http://example.com"
+          },
+          "catalogus": "http://example.com",
+          "statustypen": [
+            "http://example.com"
+          ],
+          "resultaattypen": [
+            "http://example.com"
+          ],
+          "eigenschappen": [
+            "http://example.com"
+          ],
+          "informatieobjecttypen": [
+            "http://example.com"
+          ],
+          "roltypen": [
+            "http://example.com"
+          ],
+          "besluittypen": [
+            "http://example.com"
+          ],
+          "beginGeldigheid": "2019-08-24",
+          "eindeGeldigheid": "2019-08-24",
+          "versiedatum": "2019-08-24",
+          "concept": true
+        }
+      },
+      {
+        "properties": {
+          "id": "48338157-325e-4dfc-bc82-5c757373ee8c",
+          "url": "http://localhost/api/zaaktypen/48338157-325e-4dfc-bc82-5c757373ee8c",
+          "identificatie": 99999,
+          "omschrijving": "Aanvraag omgevingsvergunning voor bouwen",
+          "omschrijvingGeneriek": "Aanvraag omgevingsvergunning voor bouwen",
+          "vertrouwelijkheidaanduiding": "openbaar",
+          "doel": "Het nemen van een besluit naar aanleiding van een wijzigingsverzoek voor een bestaande speelplaatsvergunning.",
+          "aanleiding": "Een niet-natuurlijk persoon (bijv. stichting) wenst een private speelplaats te vernieuwen of uit te bereiden met andere speeltoestellen. Hiervoor is een wijziging van de bestaande vergunning nodig.",
+          "toelichting": "Het behandelen van de aanvraag op basis van de regels en procedures van de Algemene Plaatselijke Speelplaatsverordening (APS).",
+          "indicatieInternOfExtern": "extern",
+          "handelingInitiator": "Wijzigen",
+          "onderwerp": "Vergunning",
+          "handelingBehandelaar": "Behandelen",
+          "doorlooptijd": "56 dagen",
+          "servicenorm": "3 dagen",
+          "opschortingEnAanhoudingMogelijk": true,
+          "verlengingMogelijk": true,
+          "verlengingstermijn": "28 dagen",
+          "trefwoorden": [
+            "aanvraag",
+            "omgevingsvergunning",
+            "bouwen"
+          ],
+          "publicatieIndicatie": true,
+          "publicatietekst": "string",
+          "verantwoordingsrelatie": [
+            "string"
+          ],
+          "productenOfDiensten": [
+            "http://example.com"
+          ],
+          "selectielijstProcestype": "http://example.com",
+          "referentieproces": {
+            "naam": "string",
+            "link": "http://example.com"
+          },
+          "catalogus": "http://example.com",
+          "statustypen": [
+            "http://example.com"
+          ],
+          "resultaattypen": [
+            "http://example.com"
+          ],
+          "eigenschappen": [
+            "http://example.com"
+          ],
+          "informatieobjecttypen": [
+            "http://example.com"
+          ],
+          "roltypen": [
+            "http://example.com"
+          ],
+          "besluittypen": [
+            "http://example.com"
+          ],
+          "beginGeldigheid": "2019-08-24",
+          "eindeGeldigheid": "2019-08-24",
+          "versiedatum": "2019-08-24",
+          "concept": true
+        }
+      }
+    ]
+  }
+}
