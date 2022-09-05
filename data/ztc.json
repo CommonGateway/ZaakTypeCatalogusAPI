@@ -6,7 +6,6 @@
       {
         "properties": {
           "id": "6d922ba8-be5e-47cb-adb1-0215335ec918",
-          "catalogus": "http://example.com",
           "zaaktypes": [
             "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899"
           ],
@@ -18,9 +17,6 @@
           "publicatietekst": "string",
           "publicatietermijn": "string",
           "toelichting": "string",
-          "informatieobjecttypen": [
-          "http://example.com"
-          ],
           "beginGeldigheid": "2019-08-24",
           "eindeGeldigheid": "2019-08-24",
           "concept": true
@@ -40,9 +36,6 @@
           ],
           "besluittypen": [
             "http://localhost/api/besluittypen/6d922ba8-be5e-47cb-adb1-0215335ec918"
-          ],
-          "informatieobjecttypen": [
-            "http://example.com"
           ]
         }
       }
@@ -59,8 +52,7 @@
             "kardinaliteit": "str",
             "waardenverzameling": []
           },
-          "toelichting": "string",
-          "zaaktype": "http://example.com"
+          "toelichting": "string"
         }
       }
     ],
@@ -139,11 +131,9 @@
     "ZaakType-InformatieObjectType":[
       {
         "properties": {
-          "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
-          "informatieobjecttype": "http://example.com",
+          "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899"
           "volgnummer": 1,
           "richting": "inkomend",
-          "statustype": "http://example.com"
         }
       }
     ],
@@ -185,23 +175,7 @@
             "naam": "string",
             "link": "http://example.com"
           },
-          "catalogus": "http://example.com",
-          "statustypen": [
-            "http://example.com"
-          ],
-          "resultaattypen": [
-            "http://example.com"
-          ],
           "eigenschappen": [
-            "http://example.com"
-          ],
-          "informatieobjecttypen": [
-            "http://example.com"
-          ],
-          "roltypen": [
-            "http://example.com"
-          ],
-          "besluittypen": [
             "http://example.com"
           ],
           "beginGeldigheid": "2019-08-24",
@@ -248,25 +222,6 @@
             "naam": "string",
             "link": "http://example.com"
           },
-          "catalogus": "http://example.com",
-          "statustypen": [
-            "http://example.com"
-          ],
-          "resultaattypen": [
-            "http://example.com"
-          ],
-          "eigenschappen": [
-            "http://example.com"
-          ],
-          "informatieobjecttypen": [
-            "http://example.com"
-          ],
-          "roltypen": [
-            "http://example.com"
-          ],
-          "besluittypen": [
-            "http://example.com"
-          ],
           "beginGeldigheid": "2019-08-24",
           "eindeGeldigheid": "2019-08-24",
           "versiedatum": "2019-08-24",
@@ -311,25 +266,6 @@
             "naam": "string",
             "link": "http://example.com"
           },
-          "catalogus": "http://example.com",
-          "statustypen": [
-            "http://example.com"
-          ],
-          "resultaattypen": [
-            "http://example.com"
-          ],
-          "eigenschappen": [
-            "http://example.com"
-          ],
-          "informatieobjecttypen": [
-            "http://example.com"
-          ],
-          "roltypen": [
-            "http://example.com"
-          ],
-          "besluittypen": [
-            "http://example.com"
-          ],
           "beginGeldigheid": "2019-08-24",
           "eindeGeldigheid": "2019-08-24",
           "versiedatum": "2019-08-24",
@@ -375,25 +311,6 @@
             "naam": "string",
             "link": "http://example.com"
           },
-          "catalogus": "http://example.com",
-          "statustypen": [
-            "http://example.com"
-          ],
-          "resultaattypen": [
-            "http://example.com"
-          ],
-          "eigenschappen": [
-            "http://example.com"
-          ],
-          "informatieobjecttypen": [
-            "http://example.com"
-          ],
-          "roltypen": [
-            "http://example.com"
-          ],
-          "besluittypen": [
-            "http://example.com"
-          ],
           "beginGeldigheid": "2019-08-24",
           "eindeGeldigheid": "2019-08-24",
           "versiedatum": "2019-08-24",
@@ -437,25 +354,6 @@
             "naam": "string",
             "link": "http://example.com"
           },
-          "catalogus": "http://example.com",
-          "statustypen": [
-            "http://example.com"
-          ],
-          "resultaattypen": [
-            "http://example.com"
-          ],
-          "eigenschappen": [
-            "http://example.com"
-          ],
-          "informatieobjecttypen": [
-            "http://example.com"
-          ],
-          "roltypen": [
-            "http://example.com"
-          ],
-          "besluittypen": [
-            "http://example.com"
-          ],
           "beginGeldigheid": "2019-08-24",
           "eindeGeldigheid": "2019-08-24",
           "versiedatum": "2019-08-24",
