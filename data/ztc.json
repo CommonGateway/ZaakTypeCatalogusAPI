@@ -6,7 +6,6 @@
       {
         "properties": {
           "id": "6d922ba8-be5e-47cb-adb1-0215335ec918",
-          "url": "http://example.com",
           "catalogus": "http://example.com",
           "zaaktypes": [
             "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899"
@@ -31,7 +30,6 @@
     "Catalogus":[
       {
         "properties": {
-          "url": "http://example.com",
           "domein": "strin",
           "rsin": "string",
           "contactpersoonBeheerNaam": "string",
@@ -52,7 +50,6 @@
     "Eigenschap":[
       {
         "properties": {
-          "url": "http://example.com",
           "naam": "string",
           "definitie": "string",
           "specificatie": {
@@ -71,7 +68,6 @@
       {
         "properties": {
           "id": "93b10208-daa5-4db0-a83d-fd91e8af5dd0",
-          "url": "http://example.com",
           "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
           "omschrijving": "string",
           "resultaattypeomschrijving": "http://example.com",
@@ -106,7 +102,6 @@
       {
         "properties": {
           "id": "c59e346f-e46b-464d-a9a7-9b92a47e665b",
-          "url": "http://example.com",
           "omschrijving": "in behandeling",
           "omschrijvingGeneriek": "string",
           "statustekst": "in behandeling",
@@ -119,7 +114,6 @@
       {
         "properties": {
           "id": "172400cf-82eb-48d7-a300-ab2c0167152f",
-          "url": "http://example.com",
           "omschrijving": "gesloten",
           "omschrijvingGeneriek": "string",
           "statustekst": "gesloten",
@@ -132,7 +126,6 @@
       {
         "properties": {
           "id": "bc323217-e0ac-400e-8dc2-f8bdd3e5dd0d",
-          "url": "http://example.com",
           "omschrijving": "in afwachting",
           "omschrijvingGeneriek": "string",
           "statustekst": "in afwachting",
@@ -146,7 +139,6 @@
     "ZaakType-InformatieObjectType":[
       {
         "properties": {
-          "url": "http://example.com",
           "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
           "informatieobjecttype": "http://example.com",
           "volgnummer": 1,
@@ -159,7 +151,6 @@
       {
         "properties": {
           "id": "4bba27cd-be4d-4bd0-bd4e-2f7687e4eab1",
-          "url": "http://localhost/api/zaaktypen/4bba27cd-be4d-4bd0-bd4e-2f7687e4eab1",
           "identificatie": 99999,
           "omschrijving": "Melding openbare ruimte",
           "omschrijvingGeneriek": "Melding openbare ruimte",
@@ -221,8 +212,7 @@
       },
       {
         "properties": {
-          "id": "9516c1cc-6575-486f-a344-7bfbf1847899",
-          "url": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
+          "id": "9516c1cc-6575-486f-a344-7bfbf1847899
           "identificatie": 99999,
           "omschrijving": "Wijzigen speelplaatsvergunning",
           "omschrijvingGeneriek": "Wijzigen speelplaatsvergunning",
@@ -286,7 +276,6 @@
       {
         "properties": {
           "id": "d722ab0d-6f07-411b-93f2-263c1f1abed0",
-          "url": "http://localhost/api/zaaktypen/d722ab0d-6f07-411b-93f2-263c1f1abed0",
           "identificatie": 99999,
           "omschrijving": "Aanvraag Bbz voor startende ondernemer",
           "omschrijvingGeneriek": "Aanvraag Bbz voor startende ondernemer",
@@ -350,7 +339,6 @@
       {
         "properties": {
           "id": "78ffca25-fda5-4bb3-8df8-a48afdf4c18a",
-          "url": "http://localhost/api/zaaktypen/78ffca25-fda5-4bb3-8df8-a48afdf4c18a",
           "identificatie": 99999,
           "omschrijving": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
           "omschrijvingGeneriek": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
@@ -415,7 +403,6 @@
       {
         "properties": {
           "id": "48338157-325e-4dfc-bc82-5c757373ee8c",
-          "url": "http://localhost/api/zaaktypen/48338157-325e-4dfc-bc82-5c757373ee8c",
           "identificatie": 99999,
           "omschrijving": "Aanvraag omgevingsvergunning voor bouwen",
           "omschrijvingGeneriek": "Aanvraag omgevingsvergunning voor bouwen",
