@@ -8020,13 +8020,12 @@ components:
       type: object
       properties:
         url:
+          type: string
           title: Url
           description: URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object.
-          type: string
           format: uri
           maxLength: 1000
           minLength: 1
-          readOnly: true
         naam:
           title: Naam
           description: De naam van de EIGENSCHAP
@@ -8668,40 +8667,35 @@ components:
         catalogus:
           $ref: '#/components/schemas/Catalogus'
         statustypen:
-          description: URL-referenties naar de STATUSTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           type: array
+          description: URL-referenties naar de STATUSTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           uniqueItems: true
           items:
             $ref: '#/components/schemas/StatusType'
-          readOnly: true
         resultaattypen:
-          description: URL-referenties naar de RESULTAATTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           type: array
+          description: URL-referenties naar de RESULTAATTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           uniqueItems: true
           items:
             $ref: '#/components/schemas/ResultaatType'
-          readOnly: true
         eigenschappen:
-          description: URL-referenties naar de EIGENSCHAPPEN die aanwezig moeten zijn in ZAKEN van dit ZAAKTYPE.
           type: array
+          description: URL-referenties naar de EIGENSCHAPPEN die aanwezig moeten zijn in ZAKEN van dit ZAAKTYPE.
           uniqueItems: true
           items:
             $ref: '#/components/schemas/Eigenschap'
-          readOnly: true
         informatieobjecttypen:
-          description: URL-referenties naar de INFORMATIEOBJECTTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           type: array
+          description: URL-referenties naar de INFORMATIEOBJECTTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           uniqueItems: true
           items:
             $ref: '#/components/schemas/InformatieObjectType'
-          readOnly: true
         roltypen:
-          description: URL-referenties naar de ROLTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           type: array
+          description: URL-referenties naar de ROLTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           uniqueItems: true
           items:
             $ref: '#/components/schemas/RolType'
-          readOnly: true
         besluittypen:
           description: URL-referenties naar de BESLUITTYPEN die mogelijk zijn binnen dit ZAAKTYPE.
           type: array
