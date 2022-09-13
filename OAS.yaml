@@ -7902,15 +7902,15 @@ components:
             $ref: '#/components/schemas/FieldValidationError'
     Catalogus:
       type: object
+      x-context: schema.conduction.nl/catalogus
       properties:
         url:
+          type: string
           title: Url
           description: URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object.
-          type: string
           format: uri
           maxLength: 1000
           minLength: 1
-          readOnly: true
         domein:
           title: Domein
           description: Een afkorting waarmee wordt aangegeven voor welk domein in een CATALOGUS ZAAKTYPEn zijn uitgewerkt.
@@ -7965,7 +7965,6 @@ components:
         - domein
         - rsin
         - contactpersoonBeheerNaam
-      x-context: schema.conduction.nl/catalogus
     EigenschapSpecificatie:
       title: Specificatie
       required:
@@ -8046,11 +8045,11 @@ components:
           type: string
           maxLength: 1000
         zaaktype:
-          $ref: '#/components/schemas/ZaakType'
+          type: string
+          format: uri
       required:
         - naam
         - definitie
-        - zaaktype
     InformatieObjectType:
       type: object
       properties:
@@ -8232,15 +8231,15 @@ components:
       nullable: true
     ResultaatType:
       type: object
+      x-context: schema.conduction.nl/resultaattype
       properties:
         url:
+          type: string
           title: Url
           description: URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object.
-          type: string
           format: uri
           maxLength: 1000
           minLength: 1
-          readOnly: true
         zaaktype:
           $ref: '#/components/schemas/ZaakType'
         omschrijving:
@@ -8249,8 +8248,6 @@ components:
           type: string
           maxLength: 20
           minLength: 1
-        resultaattypeomschrijving:
-          $ref: ''
         omschrijvingGeneriek:
           title: Omschrijving generiek
           description: Waarde van de omschrijving-generiek referentie (attribuut `omschrijving`)
@@ -8290,22 +8287,19 @@ components:
         brondatumArchiefprocedure:
           $ref: '#/components/schemas/BrondatumArchiefprocedure'
       required:
-        - zaaktype
         - omschrijving
-        - resultaattypeomschrijving
         - selectielijstklasse
-      x-context: schema.conduction.nl/resultaattype
     RolType:
       type: object
+      x-context: schema.conduction.nl/roltype
       properties:
         url:
+          type: string
           title: Url
           description: URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object.
-          type: string
           format: uri
           maxLength: 1000
           minLength: 1
-          readOnly: true
         zaaktype:
           $ref: '#/components/schemas/ZaakType'
         omschrijving:
@@ -8340,21 +8334,19 @@ components:
             - zaakcoordinator
             - mede_initiator
       required:
-        - zaaktype
         - omschrijving
         - omschrijvingGeneriek
-      x-context: schema.conduction.nl/roltype
     StatusType:
       type: object
+      x-context: schema.conduction.nl/statustype
       properties:
         url:
+          type: string
           title: Url
           description: URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object.
-          type: string
           format: uri
           maxLength: 1000
           minLength: 1
-          readOnly: true
         omschrijving:
           title: Omschrijving
           description: 'Een korte, voor de initiator van de zaak relevante, omschrijving van de aard van de STATUS van zaken van een ZAAKTYPE.'
@@ -8390,9 +8382,7 @@ components:
           type: boolean
       required:
         - omschrijving
-        - zaaktype
         - volgnummer
-      x-context: schema.conduction.nl/statustype
     ZaakTypeInformatieObjectType:
       required:
         - zaaktype
@@ -8465,40 +8455,6 @@ components:
           type: string
           format: uri
           maxLength: 200
-    ZaakTypenRelatie:
-      description: De ZAAKTYPEn van zaken die relevant zijn voor zaken van dit ZAAKTYPE.
-      required:
-        - zaaktype
-        - aardRelatie
-      type: object
-      properties:
-        zaaktype:
-          title: Zaaktype
-          description: 'URL referentie naar het gerelateerde zaaktype, mogelijks in een extern ZTC.'
-          type: string
-          format: uri
-          maxLength: 200
-          minLength: 1
-        aardRelatie:
-          title: Aard relatie
-          description: |-
-            Omschrijving van de aard van de relatie van zaken van het ZAAKTYPE tot zaken van het andere ZAAKTYPE
-
-            Uitleg bij mogelijke waarden:
-
-            * `vervolg` - Vervolg
-            * `bijdrage` - Bijdrage
-            * `onderwerp` - Onderwerp
-          type: string
-          enum:
-            - vervolg
-            - bijdrage
-            - onderwerp
-        toelichting:
-          title: Toelichting
-          description: Een toelichting op de aard van de relatie tussen beide ZAAKTYPEN.
-          type: string
-          maxLength: 255
     ZaakType:
       type: object
       x-context: schema.conduction.nl/zaaktype
@@ -8749,3 +8705,37 @@ components:
         - gerelateerdeZaaktypen
         - beginGeldigheid
         - versiedatum
+    ZaakTypenRelatie:
+      description: De ZAAKTYPEn van zaken die relevant zijn voor zaken van dit ZAAKTYPE.
+      required:
+        - zaaktype
+        - aardRelatie
+      type: object
+      properties:
+        zaaktype:
+          title: Zaaktype
+          description: 'URL referentie naar het gerelateerde zaaktype, mogelijks in een extern ZTC.'
+          type: string
+          format: uri
+          maxLength: 200
+          minLength: 1
+        aardRelatie:
+          title: Aard relatie
+          description: |-
+            Omschrijving van de aard van de relatie van zaken van het ZAAKTYPE tot zaken van het andere ZAAKTYPE
+
+            Uitleg bij mogelijke waarden:
+
+            * `vervolg` - Vervolg
+            * `bijdrage` - Bijdrage
+            * `onderwerp` - Onderwerp
+          type: string
+          enum:
+            - vervolg
+            - bijdrage
+            - onderwerp
+        toelichting:
+          title: Toelichting
+          description: Een toelichting op de aard van de relatie tussen beide ZAAKTYPEN.
+          type: string
+          maxLength: 255
