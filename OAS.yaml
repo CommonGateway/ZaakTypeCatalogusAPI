@@ -8251,11 +8251,10 @@ components:
           maxLength: 20
           minLength: 1
         omschrijvingGeneriek:
+          type: string
           title: Omschrijving generiek
           description: Waarde van de omschrijving-generiek referentie (attribuut `omschrijving`)
-          type: string
           minLength: 1
-          readOnly: true
         selectielijstklasse:
           title: Selectielijstklasse
           description: 'URL-referentie naar de, voor het archiefregime bij het RESULTAATTYPE relevante, categorie in de Selectielijst Archiefbescheiden (RESULTAAT in de Selectielijst API) van de voor het ZAAKTYPE verantwoordelijke overheidsorganisatie.'
@@ -8376,10 +8375,9 @@ components:
           maximum: 9999
           minimum: 1
         isEindstatus:
+          type: boolean
           title: Is eindstatus
           description: Geeft aan dat dit STATUSTYPE een eindstatus betreft. Dit gegeven is afgeleid uit alle STATUSTYPEn van dit ZAAKTYPE met het hoogste volgnummer.
-          type: boolean
-          readOnly: true
         informeren:
           title: Informeren
           description: Aanduiding die aangeeft of na het zetten van een STATUS van dit STATUSTYPE de Initiator moet worden geïnformeerd over de statusovergang.
