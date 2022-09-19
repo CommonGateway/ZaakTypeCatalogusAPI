@@ -19,9 +19,6 @@
           "publicatietekst": "string",
           "publicatietermijn": "string",
           "toelichting": "string",
-          "informatieobjecttypen": [
-          "http://example.com"
-          ],
           "beginGeldigheid": "2019-08-24",
           "eindeGeldigheid": "2019-08-24",
           "concept": true
@@ -42,9 +39,6 @@
           ],
           "besluittypen": [
             "http://localhost/api/besluittypen/6d922ba8-be5e-47cb-adb1-0215335ec918"
-          ],
-          "informatieobjecttypen": [
-            "http://example.com"
           ]
         }
       }
@@ -62,8 +56,7 @@
             "kardinaliteit": "str",
             "waardenverzameling": []
           },
-          "toelichting": "string",
-          "zaaktype": "http://example.com"
+          "toelichting": "string"
         }
       }
     ],
@@ -150,8 +143,7 @@
           "zaaktype": "http://localhost/api/zaaktypen/9516c1cc-6575-486f-a344-7bfbf1847899",
           "informatieobjecttype": "http://example.com",
           "volgnummer": 1,
-          "richting": "inkomend",
-          "statustype": "http://example.com"
+          "richting": "inkomend"
         }
       }
     ],
@@ -185,9 +177,6 @@
           "publicatietekst": "string",
           "verantwoordingsrelatie": [
             "string"
-          ],
-          "productenOfDiensten": [
-            "http://example.com"
           ],
           "selectielijstProcestype": "http://example.com",
           "referentieproces": {
@@ -232,10 +221,6 @@
           "verantwoordingsrelatie": [
             "string"
           ],
-          "productenOfDiensten": [
-            "http://example.com"
-          ],
-          "selectielijstProcestype": "http://example.com",
           "referentieproces": {
             "naam": "string",
             "link": "http://example.com"
@@ -278,10 +263,6 @@
           "verantwoordingsrelatie": [
             "string"
           ],
-          "productenOfDiensten": [
-            "http://example.com"
-          ],
-          "selectielijstProcestype": "http://example.com",
           "referentieproces": {
             "naam": "string",
             "link": "http://example.com"
@@ -325,10 +306,6 @@
           "verantwoordingsrelatie": [
             "string"
           ],
-          "productenOfDiensten": [
-            "http://example.com"
-          ],
-          "selectielijstProcestype": "http://example.com",
           "referentieproces": {
             "naam": "string",
             "link": "http://example.com"
@@ -370,10 +347,6 @@
           "verantwoordingsrelatie": [
             "string"
           ],
-          "productenOfDiensten": [
-            "http://example.com"
-          ],
-          "selectielijstProcestype": "http://example.com",
           "referentieproces": {
             "naam": "string",
             "link": "http://example.com"
