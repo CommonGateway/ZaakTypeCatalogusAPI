@@ -7731,7 +7731,8 @@ components:
           type: array
           uniqueItems: true
           items:
-            $ref: '#/components/schemas/ZaakType'
+            type: string
+            format: uri
         omschrijving:
           title: Omschrijving
           description: Omschrijving van de aard van BESLUITen van het BESLUITTYPE.
@@ -8052,6 +8053,7 @@ components:
         - definitie
     InformatieObjectType:
       type: object
+      x-context: schema.conduction.nl/informatieobjecttype
       properties:
         url:
           title: Url
@@ -8062,7 +8064,8 @@ components:
           minLength: 1
           readOnly: true
         catalogus:
-          $ref: '#/components/schemas/Catalogus'
+          type: string
+          format: uri
         omschrijving:
           title: Omschrijving
           description: Omschrijving van de aard van informatieobjecten van dit INFORMATIEOBJECTTYPE.
@@ -8115,7 +8118,6 @@ components:
         - omschrijving
         - vertrouwelijkheidaanduiding
         - beginGeldigheid
-      x-context: schema.conduction.nl/informatieobjecttype
     BrondatumArchiefprocedure:
       title: Brondatum archiefprocedure
       description: Specificatie voor het bepalen van de brondatum voor de start van de Archiefactietermijn (=brondatum) van het zaakdossier.
@@ -8659,7 +8661,7 @@ components:
           type: array
           uniqueItems: true
           items:
-            $ref: ''
+            $ref: '#/components/schemas/BesluitType'
         gerelateerdeZaaktypen:
           description: De ZAAKTYPEn van zaken die relevant zijn voor zaken van dit ZAAKTYPE.
           type: array
