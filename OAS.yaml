@@ -8051,6 +8051,7 @@ components:
       required:
         - naam
         - definitie
+      x-context: schema.conduction.nl/eigenschap
     InformatieObjectType:
       type: object
       x-context: schema.conduction.nl/informatieobjecttype
