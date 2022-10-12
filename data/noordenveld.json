@@ -1,216 +1,205 @@
 {
-  "openapi": "3.0.0",
-  "collection": "https://raw.githubusercontent.com/CommonGateway/ZaakTypeCatalogusAPI/main/OAS.yaml",
-  "schemas": {
-    "ZaakType":[
-      {
-        "properties": {
-          "identificatie": "B0366",
-          "omschrijving": "verhuizing intern",
-          "omschrijvingGeneriek": "verhuizing intern",
-          "vertrouwelijkheidaanduiding": "openbaar",
-          "doel": "string",
-          "aanleiding": "string",
-          "toelichting": "string",
-          "indicatieInternOfExtern": "intern",
-          "handelingInitiator": "string",
-          "onderwerp": "string",
-          "handelingBehandelaar": "string",
-          "doorlooptijd": "string",
-          "servicenorm": "string",
-          "opschortingEnAanhoudingMogelijk": true,
-          "verlengingMogelijk": true,
-          "verlengingstermijn": "string",
-          "trefwoorden": [
-              "string"
-          ],
-          "publicatieIndicatie": true,
-          "publicatietekst": "string",
-          "selectielijstProcestype": "http://example.com",
-          "productenOfDiensten": [
-              "http://example.com"
-          ],
-          "referentieproces": {
-              "naam": "string",
-              "link": "http://example.com"
-          },
-          "catalogus": {
-              "domein": "strin",
-              "rsin": "string",
-              "contactpersoonBeheerNaam": "string"
-          },
-          "statustypen": [
-              {
-                  "omschrijving": "pending",
-                  "omschrijvingGeneriek": "pending",
-                  "statustekst": "pending",
-                  "volgnummer": 1,
-                  "isEindstatus": true,
-                  "informeren": true
-              }
-          ],
-          "resultaattypen": [
-              {
-                  "omschrijving": "afgehandeld",
-                  "omschrijvingGeneriek": "afgehandeld",
-                  "selectielijstklasse": "http://example.com",
-                  "toelichting": "afgehandeld",
-                  "archiefnominatie": "blijvend_bewaren",
-                  "archiefactietermijn": "string"
-              }
-          ],
-          "eigenschappen": [
-              {
-                  "naam": "FORMULIERID",
-                  "definitie": "FORMULIERID"
-              },
-              {
-                  "naam": "DATUMVERZENDING",
-                  "definitie": "DATUMVERZENDING"
-              },
-              { 
-                  "naam": "ZAAKTYPE",
-                  "definitie": "ZAAKTYPE"
-              },
-              { 
-                  "naam": "CODE_KANAAL",
-                  "definitie": "CODE_KANAAL"
-              },
-              { 
-                  "naam": "CODE_MEDEWERKER",
-                  "definitie": "CODE_MEDEWERKER"
-              },
-              { 
-                  "naam": "INDIENER",
-                  "definitie": "INDIENER"
-              },
-              { 
-                  "naam": "INDIENERSOORT",
-                  "definitie": "INDIENERSOORT"
-              },
-              { 
-                  "naam": "BETROUWBAARHEID_ID",
-                  "definitie": "BETROUWBAARHEID_IDENTIFICATIE"
-              },
-              { 
-                  "naam": "BETROUWBAARHEID_NAW",
-                  "definitie": "BETROUWBAARHEID_NAW"
-              },
-              {
-                  "naam": "BSN",
-                  "definitie": "BSN"
-              },
-              {
-                  "naam": "VOORLETTERS",
-                  "definitie": "VOORLETTERS"
-              },
-              {
-                  "naam": "ACHTERNAAM",
-                  "definitie": "ACHTERNAAM"
-              },
-              {
-                  "naam": "GESLACHT",
-                  "definitie": "GESLACHT"
-              },
-              {
-                  "naam": "STRAATNAAM",
-                  "definitie": "STRAATNAAM"
-              },
-              {
-                  "naam": "HUISNUMMER",
-                  "definitie": "HUISNUMMER"
-              },
-              {
-                  "naam": "POSTCODE",
-                  "definitie": "POSTCODE"
-              },
-              {
-                  "naam": "WOONPLAATS",
-                  "definitie": "WOONPLAATS"
-              },
-              {
-                  "naam": "TELEFOONNUMMER",
-                  "definitie": "TELEFOONNUMMER"
-              },
-              {
-                  "naam": "EMAILADRES",
-                  "definitie": "EMAILADRES"
-              },
-              {
-                  "naam": "GEMEENTECODE",
-                  "definitie": "GEMEENTECODE"
-              },
-              {
-                  "naam": "STRAATNAAM_NIEUW",
-                  "definitie": "STRAATNAAM_NIEUW"
-              },
-              {
-                  "naam": "HUISNUMMER_NIEUW",
-                  "definitie": "HUISNUMMER_NIEUW"
-              },
-              {
-                  "naam": "HUISLETTER_NIEUW",
-                  "definitie": "HUISLETTER_NIEUW"
-              },
-              {
-                  "naam": "HUISNUMMER NIEUW",
-                  "definitie": "HUISNUMMERTOEVOEGING_NIEUW"
-              },
-              {
-                  "naam": "POSTCODE_NIEUW",
-                  "definitie": "POSTCODE_NIEUW"
-              },
-              {
-                  "naam": "WOONPLAATS_NIEUW",
-                  "definitie": "WOONPLAATS_NIEUW"
-              },
-              {
-                  "naam": "VERHUISDATUM",
-                  "definitie": "VERHUISDATUM"
-              },
-              {
-                  "naam": "AANTAL_PERS",
-                  "definitie": "AANTAL_PERS_NIEUW_ADRES"
-              },
-              {
-                  "naam": "WIJZE_BEWONING",
-                  "definitie": "WIJZE_BEWONING"
-              },
-              {
-                  "naam": "BSN_HOOFDBEWONER",
-                  "definitie": "BSN_HOOFDBEWONER"
-              },
-              {
-                  "naam": "MEEVERHUIZENDE",
-                  "definitie": "MEEVERHUIZENDE_GEZINSLEDEN"
-              }
-          ],
-          "besluittypen": [
-              {
-                  "omschrijving": "test",
-                  "omschrijvingGeneriek": "string",
-                  "besluitcategorie": "string",
-                  "reactietermijn": "string",
-                  "publicatieIndicatie": true,
-                  "publicatietekst": "string",
-                  "publicatietermijn": "string",
-                  "toelichting": "string",
-                  "beginGeldigheid": "2019-08-24",
-                  "eindeGeldigheid": "2019-08-24"
-              }
-          ],
-          "gerelateerdeZaaktypen": [
-              {
-                  "zaaktype": "http://example.com",
-                  "aardRelatie": "vervolg",
-                  "toelichting": "string"
-              }
-          ],
-          "beginGeldigheid": "2019-08-24",
-          "eindeGeldigheid": "2019-08-24",
-          "versiedatum": "2019-08-24"
-        }
-      }
-    ]
-  }
+	"openapi": "3.0.0",
+	"collection": "https://raw.githubusercontent.com/CommonGateway/ZaakTypeCatalogusAPI/main/OAS.yaml",
+	"schemas": {
+		"ZaakType": [{
+			"properties": {
+				"identificatie": "B0366",
+				"omschrijving": "verhuizing intern",
+				"omschrijvingGeneriek": "verhuizing intern",
+				"vertrouwelijkheidaanduiding": "openbaar",
+				"doel": "string",
+				"aanleiding": "string",
+				"toelichting": "string",
+				"indicatieInternOfExtern": "intern",
+				"handelingInitiator": "string",
+				"onderwerp": "string",
+				"handelingBehandelaar": "string",
+				"doorlooptijd": "string",
+				"servicenorm": "string",
+				"opschortingEnAanhoudingMogelijk": true,
+				"verlengingMogelijk": true,
+				"verlengingstermijn": "string",
+				"trefwoorden": [
+					"string"
+				],
+				"publicatieIndicatie": true,
+				"publicatietekst": "string",
+				"selectielijstProcestype": "http://example.com",
+				"productenOfDiensten": [
+					"http://example.com"
+				],
+				"referentieproces": {
+					"naam": "string",
+					"link": "http://example.com"
+				},
+				"catalogus": {
+					"domein": "strin",
+					"rsin": "string",
+					"contactpersoonBeheerNaam": "string"
+				},
+				"statustypen": [{
+					"omschrijving": "pending",
+					"omschrijvingGeneriek": "pending",
+					"statustekst": "pending",
+					"volgnummer": 1,
+					"isEindstatus": true,
+					"informeren": true
+				}],
+				"resultaattypen": [{
+					"omschrijving": "afgehandeld",
+					"omschrijvingGeneriek": "afgehandeld",
+					"selectielijstklasse": "http://example.com",
+					"toelichting": "afgehandeld",
+					"archiefnominatie": "blijvend_bewaren",
+					"archiefactietermijn": "string"
+				}],
+				"eigenschappen": [{
+						"naam": "FORMULIERID",
+						"definitie": "FORMULIERID"
+					},
+					{
+						"naam": "DATUMVERZENDING",
+						"definitie": "DATUMVERZENDING"
+					},
+					{
+						"naam": "ZAAKTYPE",
+						"definitie": "ZAAKTYPE"
+					},
+					{
+						"naam": "CODE_KANAAL",
+						"definitie": "CODE_KANAAL"
+					},
+					{
+						"naam": "CODE_MEDEWERKER",
+						"definitie": "CODE_MEDEWERKER"
+					},
+					{
+						"naam": "INDIENER",
+						"definitie": "INDIENER"
+					},
+					{
+						"naam": "INDIENERSOORT",
+						"definitie": "INDIENERSOORT"
+					},
+					{
+						"naam": "BETROUWBAARHEID_ID",
+						"definitie": "BETROUWBAARHEID_IDENTIFICATIE"
+					},
+					{
+						"naam": "BETROUWBAARHEID_NAW",
+						"definitie": "BETROUWBAARHEID_NAW"
+					},
+					{
+						"naam": "BSN",
+						"definitie": "BSN"
+					},
+					{
+						"naam": "VOORLETTERS",
+						"definitie": "VOORLETTERS"
+					},
+					{
+						"naam": "ACHTERNAAM",
+						"definitie": "ACHTERNAAM"
+					},
+					{
+						"naam": "GESLACHT",
+						"definitie": "GESLACHT"
+					},
+					{
+						"naam": "STRAATNAAM",
+						"definitie": "STRAATNAAM"
+					},
+					{
+						"naam": "HUISNUMMER",
+						"definitie": "HUISNUMMER"
+					},
+					{
+						"naam": "POSTCODE",
+						"definitie": "POSTCODE"
+					},
+					{
+						"naam": "WOONPLAATS",
+						"definitie": "WOONPLAATS"
+					},
+					{
+						"naam": "TELEFOONNUMMER",
+						"definitie": "TELEFOONNUMMER"
+					},
+					{
+						"naam": "EMAILADRES",
+						"definitie": "EMAILADRES"
+					},
+					{
+						"naam": "GEMEENTECODE",
+						"definitie": "GEMEENTECODE"
+					},
+					{
+						"naam": "STRAATNAAM_NIEUW",
+						"definitie": "STRAATNAAM_NIEUW"
+					},
+					{
+						"naam": "HUISNUMMER_NIEUW",
+						"definitie": "HUISNUMMER_NIEUW"
+					},
+					{
+						"naam": "HUISLETTER_NIEUW",
+						"definitie": "HUISLETTER_NIEUW"
+					},
+					{
+						"naam": "HUISNUMMER NIEUW",
+						"definitie": "HUISNUMMERTOEVOEGING_NIEUW"
+					},
+					{
+						"naam": "POSTCODE_NIEUW",
+						"definitie": "POSTCODE_NIEUW"
+					},
+					{
+						"naam": "WOONPLAATS_NIEUW",
+						"definitie": "WOONPLAATS_NIEUW"
+					},
+					{
+						"naam": "VERHUISDATUM",
+						"definitie": "VERHUISDATUM"
+					},
+					{
+						"naam": "AANTAL_PERS",
+						"definitie": "AANTAL_PERS_NIEUW_ADRES"
+					},
+					{
+						"naam": "WIJZE_BEWONING",
+						"definitie": "WIJZE_BEWONING"
+					},
+					{
+						"naam": "BSN_HOOFDBEWONER",
+						"definitie": "BSN_HOOFDBEWONER"
+					},
+					{
+						"naam": "MEEVERHUIZENDE",
+						"definitie": "MEEVERHUIZENDE_GEZINSLEDEN"
+					}
+				],
+				"besluittypen": [{
+					"omschrijving": "test",
+					"omschrijvingGeneriek": "string",
+					"besluitcategorie": "string",
+					"reactietermijn": "string",
+					"publicatieIndicatie": true,
+					"publicatietekst": "string",
+					"publicatietermijn": "string",
+					"toelichting": "string",
+					"beginGeldigheid": "2019-08-24",
+					"eindeGeldigheid": "2019-08-24"
+				}],
+				"gerelateerdeZaaktypen": [{
+					"zaaktype": "http://example.com",
+					"aardRelatie": "vervolg",
+					"toelichting": "string"
+				}],
+				"beginGeldigheid": "2019-08-24",
+				"eindeGeldigheid": "2019-08-24",
+				"versiedatum": "2019-08-24"
+			}
+		}]
+	}
 }
