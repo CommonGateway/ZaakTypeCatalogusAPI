@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.0",
+  "collection": "https://raw.githubusercontent.com/CommonGateway/ZaakTypeCatalogusAPI/main/OAS.yaml",
+  "schemas": {
+    "ZaakType": [
+      {
+        "properties": {
+          "omschrijving": "Aanvraag waardepapier",
+          "omschrijvingGeneriek": "waardepapier",
+          "vertrouwelijkheidaanduiding": "openbaar",
+          "doel": "Waardepapier leveren voor de aanvrager",
+          "aanleiding": "Aanvrager wilt een waardepapier hebben",
+          "toelichting": "Aanvrager wilt een waardepapier hebben dus vraagt hij deze aan de gemeente",
+          "onderwerp": "waardepapier",
+          "handelingBehandelaar": "Behandelen",
+          "trefwoorden": [
+            "aanvraag"
+          ],
+          "publicatieIndicatie": true,
+          "publicatietekst": "string",
+          "beginGeldigheid": "2019-08-24",
+          "eindeGeldigheid": "2022-08-24",
+          "versiedatum": "2022-08-24",
+          "eigenschappen": [
+            {
+              "naam": "bsn",
+              "definitie": "bsn van aanvrager"
+            },
+            {
+              "naam": "type certificaat",
+              "definitie": "type certificaat aangevraagd waardepapier"
+            }
+         ]
+        }
+      }
+    }
+  }
+}
